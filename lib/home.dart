@@ -132,11 +132,27 @@ class Contact extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   TextField(
-                    decoration: InputDecoration(filled: true, hintText: "Email", fillColor: Colors.white, border: InputBorder.none),
+                    cursorColor: Colors.black12,
+                    decoration: new InputDecoration(
+                      hintText: "tulis nama email",
+                      labelText: "Nama Email",
+                      labelStyle: TextStyle(color: Colors.black),
+                      icon: Icon(Icons.email, color: Colors.black),
+                      enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
+                      focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
+                    ),
                   ),
                   SizedBox(height: 8),
                   TextField(
-                    decoration: InputDecoration(filled: true, hintText: "Phone", fillColor: Colors.white, border: InputBorder.none),
+                    cursorColor: Colors.black12,
+                    decoration: new InputDecoration(
+                      hintText: "tulis nomer telfon",
+                      labelText: "Nomor Telfon",
+                      labelStyle: TextStyle(color: Colors.black),
+                      icon: Icon(Icons.email, color: Colors.black),
+                      enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
+                      focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
+                    ),
                   ),
                   SizedBox(height: 8),
                   MaterialButton(
