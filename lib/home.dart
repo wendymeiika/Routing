@@ -72,6 +72,7 @@ class DrawerWidget extends StatelessWidget {
 
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
+    decoration: BoxDecoration(color: Colors.pink[700]),
     currentAccountPicture: ClipOval(
       child: Image(image: AssetImage("asset/image/wendy.jpg"), fit: BoxFit.cover),
     ),
@@ -152,13 +153,9 @@ class Contact extends StatelessWidget {
 
 class Galery extends StatelessWidget {
   final List<String> foto = [
-    "asset/image/rj.jpeg",
-    "asset/image/jn.jpeg",
-    "asset/image/hc.jpeg",
-    "asset/image/jm.jpeg",
-    "asset/image/ch.jpeg",
-    "asset/image/js.jpeg",
-    "asset/image/mk.jpeg"
+    "asset/image/mv1.jpg",
+    "asset/image/mv5.jpg",
+    "asset/image/mv6.jpg",
   ];
 
   final List<String> sub = [
@@ -240,49 +237,49 @@ class Portofolio extends StatelessWidget {
         crossAxisCount: 2,
         children: <Widget>[
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps1.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps2.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps3.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps4.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps5.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps6.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps7.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/rj.jpeg',
+            'asset/image/ps8.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
@@ -349,10 +346,10 @@ class Setting extends StatelessWidget {
 
 class gambar extends StatelessWidget {
   final List<String> foto = [
-    "asset/image/rj.jpeg",
-    "asset/image/jn.jpeg",
-    "asset/image/hc.jpeg",
-    "asset/image/jm.jpeg"
+    "asset/image/ps9.jpeg",
+    "asset/image/ps10.jpeg",
+    "asset/image/ps11.jpeg",
+    "asset/image/ps12.jpeg"
   ];
 
   final List<String> sub = [

@@ -27,17 +27,10 @@ class NavigationDrawer extends StatelessWidget {
           body: Container(
             alignment: Alignment.center,
             decoration: new BoxDecoration(
-              image: DecorationImage(image: AssetImage('asset/image/mv1.jpg'), fit: BoxFit.cover),
+              image: DecorationImage(image: AssetImage('asset/image/bc.jpeg'), fit: BoxFit.cover),
             ),
           ),
           drawer: DrawerWidget(),
-          //body: TabBarView(
-          //  children: <Widget>[
-          //    Contact(),
-          //    Portofolio(),
-          //    Kontak(),
-          //  ],
-          //),
         ));
   }
 }
