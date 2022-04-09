@@ -297,10 +297,10 @@ class Portofolio extends StatelessWidget {
 class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    appBar:
-    AppBar(
+    return Scaffold(
+        appBar: AppBar(
       title: Text("Porofil"),
-    );
+    ));
     final wendy = Hero(
       tag: 'hero',
       child: Padding(
