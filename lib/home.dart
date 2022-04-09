@@ -107,6 +107,7 @@ class Contact extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Contact"),
+        backgroundColor: Colors.pink[800],
       ),
       body: Center(
         child: Column(
