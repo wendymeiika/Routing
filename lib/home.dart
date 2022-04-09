@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'profil.dart';
-import 'portofolio.dart';
-import 'contact.dart';
-import 'setting.dart';
-import 'galeri.dart';
 
 class DrawerWidget extends StatelessWidget {
   @override
@@ -77,6 +72,7 @@ class DrawerWidget extends StatelessWidget {
 
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
+    decoration: BoxDecoration(color: Colors.pink[700]),
     currentAccountPicture: ClipOval(
       child: Image(image: AssetImage("asset/image/wendy.jpg"), fit: BoxFit.cover),
     ),
@@ -245,49 +241,49 @@ class Portofolio extends StatelessWidget {
         crossAxisCount: 2,
         children: <Widget>[
           new Image.asset(
-            'asset/image/bunga1.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga2.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga3.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga4.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga5.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga6.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga7.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
           new Image.asset(
-            'asset/image/bunga8.jpg',
+            'asset/image/rj.jpeg',
             width: 200,
             height: 200,
             fit: BoxFit.cover,
@@ -310,7 +306,7 @@ class Profil extends StatelessWidget {
           children: [
             Padding(padding: EdgeInsets.fromLTRB(0, 50, 0, 0)),
             new Image.asset(
-              'asset/image/jejes.jpg',
+              'asset/image/wendy.jpg',
               width: 250,
               height: 250,
               fit: BoxFit.cover,
@@ -318,10 +314,10 @@ class Profil extends StatelessWidget {
             Padding(padding: EdgeInsets.fromLTRB(0, 15, 0, 15)),
             Center(
               child: Text(
-                "Nama               : Sekar Ananta Putri Jesica\n"
-                "Nim                  : 362055401022\n"
-                "Program Studi  : Teknik Informatika\n"
-                "Jenis Kelamin    : Perempuan\n",
+                "Nama               : Wendy Mei Ika Nur Ainni\n"
+                "Nim                : 362055401013\n"
+                "Program Studi      : Teknik Informatika\n"
+                "Jenis Kelamin      : Perempuan\n",
                 overflow: TextOverflow.clip,
                 style: TextStyle(fontSize: 18, color: Colors.black),
                 textAlign: TextAlign.start,
@@ -348,6 +344,51 @@ class Setting extends StatelessWidget {
           ),
         ),
       ]),
+    );
+  }
+}
+
+class gambar extends StatelessWidget {
+  final List<String> foto = [
+    "asset/image/rj.jpeg",
+    "asset/image/jn.jpeg",
+    "asset/image/hc.jpeg",
+    "asset/image/jm.jpeg"
+  ];
+
+  final List<String> sub = [
+    'DORAEMON',
+    'HAIKYUU',
+    'SUBASA',
+    'NARUTO'
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text("GALERI", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30)),
+        ),
+        backgroundColor: Colors.blue[200],
+      ),
+      body: ListView.builder(
+        itemCount: foto.length,
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+              title: ClipRRect(
+                  child: Image.asset(
+                foto[index],
+                width: 350,
+                height: 200,
+                fit: BoxFit.cover,
+              )),
+              subtitle: Text(sub[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20)),
+            ),
+          );
+        },
+      ),
     );
   }
 }
