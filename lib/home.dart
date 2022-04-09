@@ -119,8 +119,16 @@ class Contact extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   SizedBox(height: 16),
-                  TextField(
-                    decoration: InputDecoration(filled: true, hintText: "Name", fillColor: Colors.white, border: InputBorder.none),
+                  TextFormField(
+                    cursorColor: Colors.black12,
+                    decoration: new InputDecoration(
+                      hintText: "tulis nama lengkap",
+                      labelText: "Nama Lengkap",
+                      labelStyle: TextStyle(color: Colors.black),
+                      icon: Icon(Icons.people, color: Colors.black),
+                      enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
+                      focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
+                    ),
                   ),
                   SizedBox(height: 8),
                   TextField(
