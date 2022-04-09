@@ -297,7 +297,11 @@ class Portofolio extends StatelessWidget {
 class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final alucard = Hero(
+    appBar:
+    AppBar(
+      title: Text("Porofil"),
+    );
+    final wendy = Hero(
       tag: 'hero',
       child: Padding(
         padding: EdgeInsets.all(16.0),
@@ -312,7 +316,7 @@ class Profil extends StatelessWidget {
     final welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Welcome Alucard',
+        'Welcome Wendy',
         style: TextStyle(fontSize: 28.0, color: Colors.white),
       ),
     );
@@ -336,7 +340,7 @@ class Profil extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          alucard,
+          wendy,
           welcome,
           lorem
         ],
