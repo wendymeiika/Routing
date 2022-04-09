@@ -18,10 +18,7 @@ class NavigationDrawer extends StatelessWidget {
           appBar: AppBar(
             title: Text('Home'),
             flexibleSpace: Container(
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: <Color>[
-                Colors.blue
-              ])),
+              decoration: BoxDecoration(color: Colors.pink[700], gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: <Color>[])),
             ),
           ),
           body: Container(
