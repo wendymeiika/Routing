@@ -299,57 +299,32 @@ class Profil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      title: Text("Porofil"),
-    ));
-    final wendy = Hero(
-      tag: 'hero',
-      child: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: CircleAvatar(
-          radius: 72.0,
-          backgroundColor: Colors.transparent,
-          backgroundImage: AssetImage('asset/image/wendy.jpg'),
+          title: Text("Profil"),
         ),
-      ),
-    );
-
-    final welcome = Padding(
-      padding: EdgeInsets.all(8.0),
-      child: Text(
-        'Welcome Wendy',
-        style: TextStyle(fontSize: 28.0, color: Colors.white),
-      ),
-    );
-
-    final lorem = Padding(
-      padding: EdgeInsets.all(8.0),
-      child: Text(
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.',
-        style: TextStyle(fontSize: 16.0, color: Colors.white),
-      ),
-    );
-
-    final body = Container(
-      width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.all(28.0),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [
-          Colors.blue,
-          Colors.lightBlueAccent,
-        ]),
-      ),
-      child: Column(
-        children: <Widget>[
-          wendy,
-          welcome,
-          lorem
-        ],
-      ),
-    );
-
-    return Scaffold(
-      body: body,
-    );
+        body: Column(
+          //mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(padding: EdgeInsets.fromLTRB(0, 50, 0, 0)),
+            new Image.asset(
+              'asset/image/wendy.jpg',
+              width: 250,
+              height: 250,
+              fit: BoxFit.cover,
+            ),
+            Padding(padding: EdgeInsets.fromLTRB(0, 15, 0, 15)),
+            Center(
+              child: Text(
+                "Nama               : Wendy Mei Ika Nur Ainni\n"
+                "Nim                : 362055401013\n"
+                "Program Studi      : Teknik Informatika\n"
+                "Jenis Kelamin      : Perempuan\n",
+                overflow: TextOverflow.clip,
+                style: TextStyle(fontSize: 18, color: Colors.black),
+                textAlign: TextAlign.start,
+              ),
+            ),
+          ],
+        ));
   }
 }
 
