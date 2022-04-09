@@ -155,17 +155,11 @@ class Contact extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 8),
-                  MaterialButton(
-                    height: 60,
-                    minWidth: double.infinity,
-                    color: Color(0xff333333),
-                    onPressed: () {},
-                    child: Text("SUBMIT",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        )),
-                  )
+                  ElevatedButton(
+                    onPressed: () => print("Data anda telah terekam"),
+                    child: Text("Submit"),
+                    style: ElevatedButton.styleFrom(primary: Colors.black),
+                  ),
                 ],
               ),
             )
