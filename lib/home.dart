@@ -149,7 +149,7 @@ class Contact extends StatelessWidget {
                       hintText: "tulis nomer telfon",
                       labelText: "Nomor Telfon",
                       labelStyle: TextStyle(color: Colors.black),
-                      icon: Icon(Icons.email, color: Colors.black),
+                      icon: Icon(Icons.call, color: Colors.black),
                       enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
                       focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
                     ),
@@ -295,11 +295,12 @@ class Profil extends StatelessWidget {
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(padding: EdgeInsets.fromLTRB(0, 50, 0, 0)),
-            new Image.asset(
-              'asset/image/wendy.jpg',
-              width: 250,
-              height: 250,
-              fit: BoxFit.cover,
+            CircleAvatar(
+              radius: 100.0,
+              backgroundColor: Colors.transparent,
+              backgroundImage: AssetImage(
+                "asset/image/wendy.jpg",
+              ),
             ),
             Padding(padding: EdgeInsets.fromLTRB(0, 15, 0, 15)),
             Center(
