@@ -341,6 +341,19 @@ class Profil extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
+                      Icons.home,
+                      color: Colors.pink[800],
+                    ),
+                    title: Text(
+                      'Banyuwangi',
+                      style: TextStyle(fontFamily: 'BalooBhai', fontSize: 20.0),
+                    ),
+                  )),
+              Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       color: Colors.pink[800],
                     ),
