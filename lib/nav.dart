@@ -174,12 +174,18 @@ class Galery extends StatelessWidget {
     "asset/image/ps10.jpeg",
     "asset/image/ps11.jpeg",
     "asset/image/ps12.jpeg",
+    "asset/image/ps1.jpeg",
+    "asset/image/ps2.jpeg",
+    "asset/image/ps3.jpeg",
   ];
 
   final List<String> sub = [
     'Jujutsu Kaisen',
     'Demon Slayer',
     'Hunter X Hunter',
+    'Neverlend',
+    'Whisper',
+    'A Whisker Away',
   ];
 
   @override
