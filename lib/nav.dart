@@ -298,7 +298,7 @@ class Profil extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 80,
-                backgroundImage: AssetImage('images/protocoder.png'),
+                backgroundImage: AssetImage('asset/image/wendy.jpg'),
               ),
               Text(
                 'Proto Coders Point',
@@ -312,7 +312,7 @@ class Profil extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontFamily: 'SourceSansPro',
-                  color: Colors.red[400],
+                  color: Colors.pink[800],
                   letterSpacing: 2.5,
                 ),
               ),
@@ -320,7 +320,7 @@ class Profil extends StatelessWidget {
                 height: 20.0,
                 width: 200,
                 child: Divider(
-                  color: Colors.teal[100],
+                  color: Colors.pink[800],
                 ),
               ),
               Text("Keep visiting protocoderspoint.com for more contents"),
@@ -330,10 +330,10 @@ class Profil extends StatelessWidget {
                   child: ListTile(
                     leading: Icon(
                       Icons.phone,
-                      color: Colors.teal[900],
+                      color: Colors.pink[800],
                     ),
                     title: Text(
-                      '+91 85465XXX8XX',
+                      '085646689532',
                       style: TextStyle(fontFamily: 'BalooBhai', fontSize: 20.0),
                     ),
                   )),
@@ -343,10 +343,10 @@ class Profil extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.cake,
-                    color: Colors.teal[900],
+                    color: Colors.pink[800],
                   ),
                   title: Text(
-                    '08-05-1995',
+                    '01-05-2002',
                     style: TextStyle(fontSize: 20.0, fontFamily: 'Neucha'),
                   ),
                 ),
