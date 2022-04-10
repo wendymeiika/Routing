@@ -341,11 +341,11 @@ class Profil extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
-                      Icons.phone,
+                      Icons.email,
                       color: Colors.pink[800],
                     ),
                     title: Text(
-                      '085646689532',
+                      'wendymeiikanurainni@gmail.com',
                       style: TextStyle(fontFamily: 'BalooBhai', fontSize: 20.0),
                     ),
                   )),
