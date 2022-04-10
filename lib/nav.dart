@@ -124,7 +124,7 @@ class Contact extends StatelessWidget {
                       hintText: "tulis nama lengkap",
                       labelText: "Nama Lengkap",
                       labelStyle: TextStyle(color: Colors.black),
-                      icon: Icon(Icons.people, color: Colors.pink[800]),
+                      icon: Icon(Icons.account_circle, color: Colors.pink[800]),
                       enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
                       focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
                     ),
@@ -177,6 +177,9 @@ class Galery extends StatelessWidget {
     "asset/image/ps1.jpeg",
     "asset/image/ps2.jpeg",
     "asset/image/ps3.jpeg",
+    "asset/image/ps4.jpeg",
+    "asset/image/ps5.jpeg",
+    "asset/image/ps6.jpeg",
   ];
 
   final List<String> sub = [
@@ -186,6 +189,9 @@ class Galery extends StatelessWidget {
     'Neverlend',
     'Whisper',
     'A Whisker Away',
+    'Weathering',
+    'Your Name',
+    'Your lie in April',
   ];
 
   @override
