@@ -301,7 +301,7 @@ class Profil extends StatelessWidget {
                 backgroundImage: AssetImage('asset/image/wendy.jpg'),
               ),
               Text(
-                'Proto Coders Point',
+                'Wendy Mei Ika Nur Ainni',
                 style: TextStyle(
                   fontFamily: 'SourceSansPro',
                   fontSize: 25,
@@ -323,7 +323,19 @@ class Profil extends StatelessWidget {
                   color: Colors.pink[800],
                 ),
               ),
-              Text("Keep visiting protocoderspoint.com for more contents"),
+              Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.pink[800],
+                    ),
+                    title: Text(
+                      '085646689532',
+                      style: TextStyle(fontFamily: 'BalooBhai', fontSize: 20.0),
+                    ),
+                  )),
               Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
