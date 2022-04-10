@@ -113,7 +113,6 @@ class Contact extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text("Contact", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 32),
               child: Column(
@@ -125,7 +124,7 @@ class Contact extends StatelessWidget {
                       hintText: "tulis nama lengkap",
                       labelText: "Nama Lengkap",
                       labelStyle: TextStyle(color: Colors.black),
-                      icon: Icon(Icons.people, color: Colors.black),
+                      icon: Icon(Icons.people, color: Colors.pink[800]),
                       enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
                       focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
                     ),
@@ -137,7 +136,7 @@ class Contact extends StatelessWidget {
                       hintText: "tulis nama email",
                       labelText: "Nama Email",
                       labelStyle: TextStyle(color: Colors.black),
-                      icon: Icon(Icons.email, color: Colors.black),
+                      icon: Icon(Icons.email, color: Colors.pink[800]),
                       enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
                       focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
                     ),
@@ -149,7 +148,7 @@ class Contact extends StatelessWidget {
                       hintText: "tulis nomer telfon",
                       labelText: "Nomor Telfon",
                       labelStyle: TextStyle(color: Colors.black),
-                      icon: Icon(Icons.call, color: Colors.black),
+                      icon: Icon(Icons.call, color: Colors.pink[800]),
                       enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
                       focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
                     ),
@@ -158,7 +157,7 @@ class Contact extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => print("Data anda telah terekam"),
                     child: Text("Submit"),
-                    style: ElevatedButton.styleFrom(primary: Colors.black),
+                    style: ElevatedButton.styleFrom(primary: Colors.pink[800]),
                   ),
                 ],
               ),
@@ -407,51 +406,6 @@ class Setting extends StatelessWidget {
               Text("     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.")
             ],
           )),
-    );
-  }
-}
-
-class gambar extends StatelessWidget {
-  final List<String> foto = [
-    "asset/image/ps9.jpeg",
-    "asset/image/ps10.jpeg",
-    "asset/image/ps11.jpeg",
-    "asset/image/ps12.jpeg"
-  ];
-
-  final List<String> sub = [
-    'DORAEMON',
-    'HAIKYUU',
-    'SUBASA',
-    'NARUTO'
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text("GALERI", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30)),
-        ),
-        backgroundColor: Colors.pink[800],
-      ),
-      body: ListView.builder(
-        itemCount: foto.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              title: ClipRRect(
-                  child: Image.asset(
-                foto[index],
-                width: 350,
-                height: 200,
-                fit: BoxFit.cover,
-              )),
-              subtitle: Text(sub[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20)),
-            ),
-          );
-        },
-      ),
     );
   }
 }
